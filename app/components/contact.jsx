@@ -1,0 +1,48 @@
+import { contact } from '../../content/contact';
+import React from 'react';
+
+/**
+ * Contact Section Component
+ * ─────────────────────────
+ * Contact info links and the contact form.
+ * Edit the contact details and form fields below.
+ */
+
+export default function Contact() {
+  return (
+    <div id="contact" style={{ position: 'relative' }}>
+      <div className="sec" style={{ position: 'relative', boxSizing: 'border-box', maxWidth: '1220px', margin: '0 auto', padding: '96px 48px' }}>
+        <div style={{ maxWidth: '640px', marginBottom: '48px' }}>
+          {/* ✏️ EDIT THIS — Section title and subtitle */}
+          <h2 className="h2" style={{ margin: '0 0 12px 0', fontFamily: "'Fredoka', 'Trebuchet MS', sans-serif", fontWeight: 600, fontSize: '40px' }}>Let&apos;s Work Together</h2>
+          <p style={{ margin: 0, fontSize: '18px', lineHeight: 1.5, color: '#3d6a85' }}>Have a project, a question or a cozy idea? Say hello.</p>
+        </div>
+        <div className="g" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '40px', alignItems: 'start' }}>
+          {/* Contact Info */}
+          <div style={{ padding: '28px', borderRadius: '24px', background: '#ffffff', boxShadow: '0 8px 24px rgba(20,90,140,0.14)', display: 'grid', gap: '18px' }}>
+            {/* ✏️ EDIT THIS — Your email address */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0f3d5c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              <a href={`mailto:${contact.email}`} style={{ fontWeight: 700 }}>{contact.email}</a>
+            </div>
+            {/* ✏️ EDIT THIS — Your GitHub profile URL */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0f3d5c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+              <a href={contact.github} style={{ fontWeight: 700 }}>{contact.github}</a>
+            </div>
+            {/* ✏️ EDIT THIS — Your LinkedIn profile URL */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0f3d5c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <a href={contact.linkedin} style={{ fontWeight: 700 }}>{contact.linkedin}</a>
+            </div>
+          </div>
+
+          <div style={{ padding: '28px', borderRadius: '24px', background: '#ffffff' }}>
+            <p style={{ margin: 0 }}>Have a question or project in mind? Send me an email.</p>
+            <a href={`mailto:${contact.email}`} style={{ display: 'inline-block', marginTop: '20px', padding: '12px 28px', borderRadius: '999px', background: '#cf3a6a', color: '#fff', textDecoration: 'none' }}>Send an email</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
