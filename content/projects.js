@@ -4,33 +4,33 @@
 // EDIT THIS FILE: Change text in quotes. To add an item, copy an existing item and keep its commas and brackets.
 
 export const projects = [
-    {
-      category: 'Web / UI/UX',
-      title: 'CloudNest Onboarding',
-      description: 'Redesigned the first-run experience of a cloud learning platform, cutting setup steps from nine to four.',
-      tags: ['Figma', 'Prototype', 'Usability'],
-      color: 'blue',
-      icon: 'star',
-      projectUrl: '',
-    },
-    {
-      category: 'Mobile / UI',
-      title: 'Carrot Tracker',
-      description: 'A gentle habit app that rewards small daily wins with a growing carrot garden.',
-      tags: ['Mobile', 'Illustration', 'Motion'],
-      color: 'pink',
-      icon: 'heart',
-      projectUrl: '',
-    },
-    {
-      category: 'Design system',
-      title: 'StarHop Design System',
-      description: 'A shared library of 60 components and tokens that keeps three product teams on the same page.',
-      tags: ['Tokens', 'Accessibility', 'Docs'],
-      color: 'green',
-      icon: 'plus',
-      projectUrl: '',
-    },
-  ];
+  {
+    category: 'Resume Builder',
+    title: 'RoastMyResume',
+    description: 'Drag and Drop AI Resume builder with an AI HR that roasts the weakpoints of your Resume',
+    tags: ['NextJS', "Antrophic", "Vercel"],
+    color: 'blue',
+    icon: 'star',
+    projectUrl: 'https://roastmy-resume-one.vercel.app/',
+  },
+  {
+    category: 'Photobooth',
+    title: 'OmoideCam',
+    description: 'Simplictic Digital Photobooth',
+    tags: ['Photobooth', 'Entertainment', 'Photography'],
+    color: 'blue',
+    icon: 'camera',
+    projectUrl: 'https://omoide-cam.vercel.app/',
+  },
+  {
+    category: 'TUI',
+    title: 'Ezcmd',
+    description: 'A Terminal Cheat sheet containing different command libraries',
+    tags: ['TUI, Rust, Terminal'],
+    color: 'blue',
+    icon: 'star',
+    projectUrl: 'https://github.com/ItzEvhyx/ezCMD',
+  },
+];
 
 export const projectsSection = { title: 'Featured Projects', subtitle: 'A few stories from my sketchbook.' };
